@@ -1490,7 +1490,7 @@ int wpa_drv_scan(struct wpa_supplicant *wpa_s, struct wpa_ssid **ssid_ptr)
 	size_t ssid_len = 0;
 	int ret = -1;
 
-	if (wpa_s->driver->combo_scan) {
+	if (0) {//wpa_s->driver->combo_scan) {
 		ret = wpa_s->driver->combo_scan(wpa_s->drv_priv, ssid_ptr,
 						wpa_s->conf->ssid);
 		if (!ret) {
